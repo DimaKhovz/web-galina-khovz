@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Детская анкета — Галина Ховзун, классическая гомеопатия</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- шрифты грузятся без блокировки страницы: если Google Fonts недоступен, анкета всё равно откроется -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div id="app"><p style="padding:40px 20px;text-align:center;font-family:system-ui,sans-serif;color:#6b6a5e">Загружаем анкету…</p></div>
+<noscript><p style="padding:20px;text-align:center;font-family:system-ui,sans-serif">Для заполнения анкеты включите JavaScript в браузере.</p></noscript>
+<script>
+  window.FORM_CONFIG = {
+    formId: 'child',
+    schemaUrl: 'schemas/child.json?v=3',
+    apiBase: 'https://khovzun-anketa-api.dkhovz.workers.dev',
+    doctorWhatsApp: '79057192085'
+  };
+</script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
